@@ -15,6 +15,7 @@ import { AccountComponent } from './account/account.component';
 import { UserService } from './shared/user.service';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MainComponent } from './main/main.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MainComponent } from './main/main.component';
     LoginComponent,
     AccountComponent,
     ToolbarComponent,
-    MainComponent
+    MainComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

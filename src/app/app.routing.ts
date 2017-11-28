@@ -3,6 +3,7 @@ import { AccountComponent } from './account/account.component';
 import { MainComponent } from './main/main.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const appRoutes: Routes = [
     {
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
             },
             {   path: 'main', component: MainComponent },
             {   path: 'account', component: AccountComponent },
-            {   path: 'login', component: LoginComponent }
+            {   path: 'login', component: LoginComponent },
+            {   path: 'register', component: RegisterComponent }
         ]
     },
 ];
