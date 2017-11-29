@@ -16,6 +16,7 @@ import { UserService } from './shared/user.service';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
+import { ListSponsorsComponent } from './list-sponsors/list-sponsors.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RegisterComponent } from './register/register.component';
     AccountComponent,
     ToolbarComponent,
     MainComponent,
-    RegisterComponent
+    RegisterComponent,
+    ListSponsorsComponent
   ],
   imports: [
     BrowserModule,

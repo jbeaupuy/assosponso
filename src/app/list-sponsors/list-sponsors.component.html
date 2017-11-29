@@ -1,0 +1,27 @@
+<h2>Associations</h2>
+<!-- ######################################################### -->
+
+<mat-grid-list cols="4">
+  <mat-grid-tile
+    *ngFor="let asso of assos"
+    [colspan]="2"
+    [rowspan]="2"
+    [style.background]="lightblue">
+    {{asso}}
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- ######################################################### -->
+<h2>Sponsors</h2>
+<!-- ######################################################### -->
+
+<mat-grid-list cols="4">
+  <mat-grid-tile
+    *ngFor="let sponso of sponsos"
+    [colspan]="2"
+    [rowspan]="2">
+    {{sponso}}
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- ######################################################### -->
