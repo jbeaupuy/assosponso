@@ -5,8 +5,9 @@
   <mat-grid-tile
     *ngFor="let asso of assos | async"
     [colspan]="2"
-    [rowspan]="2">
-    {{asso.identifiant}}
+    [rowspan]="2"
+    [style.background]="lightblue">
+    {{asso.libelle}}
   </mat-grid-tile>
 </mat-grid-list>
 
