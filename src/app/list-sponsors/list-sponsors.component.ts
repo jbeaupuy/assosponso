@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Http} from '@angular/http';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 
 @Component({
@@ -15,16 +16,8 @@ export class ListSponsorsComponent implements OnInit {
   constructor(private http: Http) {}
 
   ngOnInit() {
-    this.http.get('assets/data/association.json')
-      .subscribe(function (res) {
-        this.assos = res.json();
-        console.log(this.assos);
-      });
-    this.http.get('assets/data/sponsors.json')
-      .subscribe(function (res) {
-        this.sponsos = res.json();
-        console.log(this.sponsos);
-      });
+    this.assos = this.http.get('assets/data/association.json').map(r => r.json());
+    this.sponsos = this.http.get('assets/data/sponsors.json').map(r => r.json());
   }
 
 }

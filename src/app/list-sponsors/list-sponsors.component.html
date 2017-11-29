@@ -3,11 +3,10 @@
 
 <mat-grid-list cols="4">
   <mat-grid-tile
-    *ngFor="let asso of assos"
+    *ngFor="let asso of assos | async"
     [colspan]="2"
-    [rowspan]="2"
-    [style.background]="lightblue">
-    {{asso}}
+    [rowspan]="2">
+    {{asso.identifiant}}
   </mat-grid-tile>
 </mat-grid-list>
 
@@ -17,10 +16,10 @@
 
 <mat-grid-list cols="4">
   <mat-grid-tile
-    *ngFor="let sponso of sponsos"
+    *ngFor="let sponso of sponsos | async"
     [colspan]="2"
     [rowspan]="2">
-    {{sponso}}
+    {{sponso.libelle}}
   </mat-grid-tile>
 </mat-grid-list>
 
