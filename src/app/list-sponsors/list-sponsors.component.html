@@ -7,7 +7,7 @@
     [colspan]="2"
     [rowspan]="2"
     [style.background]="lightblue">
-    {{asso}}
+    {{asso.libelle}}
   </mat-grid-tile>
 </mat-grid-list>
 
@@ -20,7 +20,7 @@
     *ngFor="let sponso of sponsos"
     [colspan]="2"
     [rowspan]="2">
-    {{sponso}}
+    {{sponso.libelle}}
   </mat-grid-tile>
 </mat-grid-list>
 

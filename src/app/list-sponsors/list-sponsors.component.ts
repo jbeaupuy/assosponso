@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
+import {ASSOS_CONST} from '../../assets/data/associations';
+import {SPONSOS_CONST} from '../../assets/data/sponsors';
 
 
 @Component({
@@ -12,19 +14,11 @@ export class ListSponsorsComponent implements OnInit {
   assos: any;
   sponsos: any;
 
-  constructor(private http: Http) {}
+  constructor() {}
 
   ngOnInit() {
-    this.http.get('assets/data/association.json')
-      .subscribe(function (res) {
-        this.assos = res.json();
-        console.log(this.assos);
-      });
-    this.http.get('assets/data/sponsors.json')
-      .subscribe(function (res) {
-        this.sponsos = res.json();
-        console.log(this.sponsos);
-      });
+    this.assos = ASSOS_CONST.ASSOS;
+    this.sponsos = SPONSOS_CONST.SPONSO;
   }
 
 }
