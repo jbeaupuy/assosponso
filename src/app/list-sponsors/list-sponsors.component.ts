@@ -19,13 +19,32 @@ export class ListSponsorsComponent implements OnInit {
   constructor(private http: Http) {}
 
   ngOnInit() {
-    this.assos = this.http.get('assets/data/association.json').map(r => r.json());
-    this.sponsos = this.http.get('assets/data/sponsors.json').map(r => r.json());
+    this.chargeinfo();
   }
 
   change(event) {
-    this.assos = this.assos.filter(data => data.domaines === event.value);
-    this.sponsos = this.sponsos.filter(data => data.domaines === event.value);
+    this.chargeinfo();
+    console.log(event.value);
+    this.assos = this.assos.filter(data => {
+      if (event.value) {
+        console.log(data);
+        return data.domaines === event.value;
+      } else {
+        return true;
+      }
+    });
+    this.sponsos = this.sponsos.filter(data => {
+      if (event.value) {
+        return data.domaines === event.value;
+      } else {
+        return true;
+      }
+    });
+  }
+
+  chargeinfo() {
+    this.assos = this.http.get('assets/data/association.json').map(r => r.json());
+    this.sponsos = this.http.get('assets/data/sponsors.json').map(r => r.json());
   }
 
 }

@@ -1,6 +1,6 @@
 <mat-form-field>
   <mat-select placeholder="Domaines" (selectionChange)="change($event)">
-    <mat-option>-- None --</mat-option>
+    <mat-option>-- Aucun --</mat-option>
     <mat-option *ngFor="let domaine of domaines" [value]="domaine.libelle">
       {{ domaine.libelle }}
     </mat-option>
