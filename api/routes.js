@@ -24,7 +24,7 @@ function assoAdd(req, res) {
             assos = JSON.parse(data);
         }
 
-        assos.push({ libelle: r.name, identifiant: r.mail, mdp: r.pass });
+        assos.push({ nom: r.name, email: r.mail, mdp: r.pass, domaines: r.domaines.join(",") });
         var json = JSON.stringify(assos);
         fs.writeFile(filePath + 'association.json', json, 'utf8', function () {
             res.send(assos.length.toString());
@@ -44,7 +44,7 @@ function assoGet(req, res) {
 function assoList (req, res) {
     fs.readFile(filePath + 'association.json', function (err, data) {
         if (!err) {
-            res.send(JSON.parse(data));
+            res.send(JSON.parse(data).filter(a => { return req.body.domaine !== null ? a.domaines.split(',').find(function (dom) { return req.body.domaine == dom }) : true }));
         } else {
             res.send([]);
         }
@@ -53,7 +53,7 @@ function assoList (req, res) {
 function sponsoList (req, res) {
     fs.readFile(filePath + 'sponsors.json', function (err, data) {
         if (!err) {
-            res.send(JSON.parse(data));
+            res.send(JSON.parse(data).filter(a => { return req.body.domaine !== null ? a.domaines.split(',').find(function (dom) { return req.body.domaine == dom }) : true }));
         } else {
             res.send([]);
         }

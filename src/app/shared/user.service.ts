@@ -8,20 +8,20 @@ export class UserService {
 
   constructor(private http: Http) { }
 
-  public assoAdd(name, mail, pass) {
-    return this.http.post(`${this.API}/asso_add`, { name: name, mail: mail, pass: pass });
+  public assoAdd(name, mail, pass, domaines) {
+    return this.http.post(`${this.API}/asso_add`, { name: name, mail: mail, pass: pass, doms: domaines });
   }
 
   public assoGet() {
 
   }
 
-  public assoList() {
-    return this.http.post(`${this.API}/asso_list`, {});
+  public assoList(dom) {
+    return this.http.post(`${this.API}/asso_list`, { domaine: dom });
   }
 
-  public sponsorsList() {
-    return this.http.post(`${this.API}/sponso_list`, {});
+  public sponsorsList(dom) {
+    return this.http.post(`${this.API}/sponso_list`, { domaine: dom });
   }
 
 }

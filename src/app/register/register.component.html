@@ -16,6 +16,15 @@
             <input matInput placeholder="confirmer mot de passe" formControlName="check" type="password">
           </mat-form-field>
           <small *ngIf="form.errors?.passwordMismatch" style="color: red;">Les mots de passe doivent être identiques</small>
+          <form [formGroup]="form.controls['domaines']">
+            <label>Domaines d'action</label>
+            <div class="w100" *ngFor="let dom of domaines">
+              <mat-checkbox [formControlName]="dom.libelle">{{ dom.libelle }}</mat-checkbox>
+              <!--<mat-selection-list>
+                <mat-list-option *ngFor="let dom of domaines" value="dom.libelle" >{{ dom.libelle }}</mat-list-option>
+              </mat-selection-list>-->
+            </div>
+          </form>
       </mat-card-content>
         <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">S'enregistrer</button>
       <mat-card-actions>
