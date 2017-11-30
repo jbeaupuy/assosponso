@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import {Component, OnInit} from '@angular/core';
+import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 import { UserService } from '../shared/user.service';
 import 'rxjs/add/operator/filter';
@@ -16,6 +16,8 @@ export class ListSponsorsComponent implements OnInit {
   assos: any;
   sponsos: any;
   domaines: object = APP_CONSTANT.DOMAINES;
+  displayAsso = true;
+  displaySponso = true;
 
   constructor(private http: Http, private user: UserService) {}
 
@@ -30,6 +32,14 @@ export class ListSponsorsComponent implements OnInit {
   chargeinfo(dom = null) {
     this.assos = this.user.assoList(dom).map(r => r.json());
     this.sponsos = this.user.sponsorsList(dom).map(r => r.json());
+  }
+
+  showHide(type) {
+    if (type === 'asso') {
+      this.displayAsso = !this.displayAsso;
+    } else if (type === 'sponso') {
+      this.displaySponso = !this.displaySponso;
+    }
   }
 
 }
