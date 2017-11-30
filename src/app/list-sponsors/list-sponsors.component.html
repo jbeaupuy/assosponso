@@ -7,10 +7,10 @@
   </mat-select>
 </mat-form-field>
 
-<h2>Associations</h2>
+<h2>Associations <button mat-button (click)="showHide('asso')">Hide/show</button></h2>
 <!-- ######################################################### -->
 
-<mat-grid-list cols="4">
+<mat-grid-list cols="6" *ngIf="displayAsso">
   <mat-grid-tile
     *ngFor="let asso of assos | async"
     [colspan]="1"
@@ -22,15 +22,16 @@
       <p>TelFix: {{asso.telFix}}</p>
       <p>TelPortble: {{ asso.telPortable}}</p>
       <p>SIRET: {{asso.siret}}</p>
+      <p>Domaine: {{asso.domaines}}</p>
     </div>
   </mat-grid-tile>
 </mat-grid-list>
 
 <!-- ######################################################### -->
-<h2>Sponsors</h2>
+<h2>Sponsors <button mat-button (click)="showHide('sponso')">Hide/show</button></h2>
 <!-- ######################################################### -->
 
-<mat-grid-list cols="4">
+<mat-grid-list cols="6" *ngIf="displaySponso">
   <mat-grid-tile
     *ngFor="let sponso of sponsos | async"
     [colspan]="1"
@@ -42,6 +43,7 @@
       <p>TelFix: {{sponso.telFix}}</p>
       <p>TelPortble: {{ sponso.telPortable}}</p>
       <p>SIRET: {{sponso.siret}}</p>
+      <p>Domaine: {{sponso.domaines}}</p>
     </div>
   </mat-grid-tile>
 </mat-grid-list>
