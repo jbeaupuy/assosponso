@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   checkpasswordCtrl: FormControl;
   domainesCtrl: FormGroup;
 
-  domaines: object = APP_CONSTANT.DOMAINES;
+  domaines = APP_CONSTANT.DOMAINES;
 
   static passwordMatch(form) {
     if (form.controls['pass'].value !== '' && form.controls['check'].value !== '') {
@@ -61,7 +61,7 @@ export class RegisterComponent implements OnInit {
     && this.mailCtrl.value
     && this.passwordCtrl.value
     && this.domainesCtrl.value && doms.length > 0) {
-      this.us.assoAdd(this.nameCtrl.value, this.mailCtrl.value, this.passwordCtrl.value, this.doms).subscribe(() => {});
+      this.us.assoAdd(this.nameCtrl.value, this.mailCtrl.value, this.passwordCtrl.value, doms).subscribe(() => {});
     }
   }
 

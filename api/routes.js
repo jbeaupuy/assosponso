@@ -24,7 +24,7 @@ function assoAdd(req, res) {
             assos = JSON.parse(data);
         }
 
-        assos.push({ nom: r.name, email: r.mail, mdp: r.pass, domaines: r.domaines.join(",") });
+        assos.push({ nom: r.name, email: r.mail, mdp: r.pass, domaines: r.doms.join(",") });
         var json = JSON.stringify(assos);
         fs.writeFile(filePath + 'association.json', json, 'utf8', function () {
             res.send(assos.length.toString());
