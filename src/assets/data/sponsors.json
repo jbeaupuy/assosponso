@@ -14,7 +14,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -32,7 +32,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -50,7 +50,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -68,7 +68,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -86,7 +86,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -104,7 +104,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -122,7 +122,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   },
   {
@@ -140,7 +140,7 @@
     "logo": "Path to logo",
     "telFix": "O5 99 99 99 99",
     "telPortable": "O6 99 99 99 99",
-    "domaines": "Informatique",
+    "domaines": ["Informatique"],
     "siret": ""
   }
 ]
