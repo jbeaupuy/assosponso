@@ -1,24 +1,25 @@
 <div class="reg-form">
   <mat-toolbar color="primary">Formulaire d'inscription</mat-toolbar>
   <mat-card>
-    <mat-card-content>
-      <form>
-        <mat-form-field class="w100">
-          <input matInput placeholder="login">
-        </mat-form-field>
-        <mat-form-field class="w100">
-          <input matInput placeholder="email">
-        </mat-form-field>
-        <mat-form-field class="w100">
-          <input matInput placeholder="mot de passe">
-        </mat-form-field>
-        <mat-form-field class="w100">
-          <input matInput placeholder="confirmer mot de passe">
-        </mat-form-field>
-      </form>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button color="primary">S'enregistrer</button>
-    </mat-card-actions>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <mat-card-content>
+          <mat-form-field class="w100">
+            <input matInput placeholder="login" formControlName="name" type="text">
+          </mat-form-field>
+          <mat-form-field class="w100">
+            <input matInput placeholder="email" formControlName="mail" type="text">
+          </mat-form-field>
+          <mat-form-field class="w100">
+            <input matInput placeholder="mot de passe" formControlName="pass" type="password">
+          </mat-form-field>
+          <mat-form-field class="w100">
+            <input matInput placeholder="confirmer mot de passe" formControlName="check" type="password">
+          </mat-form-field>
+          <small *ngIf="form.errors?.passwordMismatch" style="color: red;">Les mots de passe doivent être identiques</small>
+      </mat-card-content>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">S'enregistrer</button>
+      <mat-card-actions>
+      </mat-card-actions>
+    </form>
   </mat-card>
 </div>

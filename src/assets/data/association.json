@@ -1,7 +1,1 @@
-[
-  {
-    "libelle": "asso1",
-    "identifiant": "asso1@mail.fr",
-    "mdp": "12345"
-  }
-]
+[{"libelle":"asso1","identifiant":"asso1@mail.fr","mdp":"12345"},{"libelle":"dat asso is imba","identifiant":"email@alakon.lol","mdp":"azerty"},{"libelle":"dat asso iz also imba","identifiant":"unmail@alakon.fr","mdp":"azerty"}]
