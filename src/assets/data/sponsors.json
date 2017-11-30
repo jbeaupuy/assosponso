@@ -1,7 +1,146 @@
 [
   {
-    "libelle": "sponsor1",
-    "identifiant": "sponsor1@mail.fr",
-    "mdp": "12345"
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "sponsor1",
+    "email": "sponsor1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor": "lightgreen",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
   }
 ]

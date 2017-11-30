@@ -1,13 +1,28 @@
+<mat-form-field>
+  <mat-select placeholder="Domaines" (selectionChange)="change($event)">
+    <mat-option>-- None --</mat-option>
+    <mat-option *ngFor="let domaine of domaines" [value]="domaine.libelle">
+      {{ domaine.libelle }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
 <h2>Associations</h2>
 <!-- ######################################################### -->
 
 <mat-grid-list cols="4">
   <mat-grid-tile
     *ngFor="let asso of assos | async"
-    [colspan]="2"
-    [rowspan]="2"
-    [style.background]="lightblue">
-    {{asso.libelle}}
+    [colspan]="1"
+    [rowspan]="1"
+    [style.background]="'lightblue'">
+    <div class="infos">
+      <h3>{{asso.nom}}</h3>
+      <p>Email: {{asso.email}}</p>
+      <p>TelFix: {{asso.telFix}}</p>
+      <p>TelPortble: {{ asso.telPortable}}</p>
+      <p>SIRET: {{asso.siret}}</p>
+    </div>
   </mat-grid-tile>
 </mat-grid-list>
 
@@ -18,9 +33,16 @@
 <mat-grid-list cols="4">
   <mat-grid-tile
     *ngFor="let sponso of sponsos | async"
-    [colspan]="2"
-    [rowspan]="2">
-    {{sponso.libelle}}
+    [colspan]="1"
+    [rowspan]="1"
+    [style.background]="'lightgreen'">
+    <div class="infos">
+      <h3>{{sponso.nom}}</h3>
+      <p>Email: {{sponso.email}}</p>
+      <p>TelFix: {{sponso.telFix}}</p>
+      <p>TelPortble: {{ sponso.telPortable}}</p>
+      <p>SIRET: {{sponso.siret}}</p>
+    </div>
   </mat-grid-tile>
 </mat-grid-list>
 

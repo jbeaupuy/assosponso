@@ -1,7 +1,92 @@
 [
   {
-    "libelle": "asso1",
-    "identifiant": "asso1@mail.fr",
-    "mdp": "12345"
+    "nom": "asso1",
+    "email": "asso1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor" : "lightblue",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "asso1",
+    "email": "asso1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor" : "lightblue",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "asso1",
+    "email": "asso1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor" : "lightblue",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "asso1",
+    "email": "asso1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor" : "lightblue",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
+  },
+  {
+    "nom": "asso1",
+    "email": "asso1@mail.fr",
+    "mdp": "12345",
+    "adresse": {
+      "rue": "",
+      "complement": "",
+      "cp": "",
+      "ville":"",
+      "region": ""
+    },
+    "bgColor" : "lightblue",
+    "logo": "Path to logo",
+    "telFix": "O5 99 99 99 99",
+    "telPortable": "O6 99 99 99 99",
+    "domaines": "Informatique",
+    "siret": ""
   }
 ]
