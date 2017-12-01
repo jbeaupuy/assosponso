@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class UserService {
 
-  API = "http://localhost:3000";
+  API = "";
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {
+    this.API = environment.production ? "http://assosponso.alwaysdata.net:3000" : "http://localhost:3000";
+  }
 
   public assoAdd(name, mail, pass, domaines) {
     return this.http.post(`${this.API}/asso_add`, { name: name, mail: mail, pass: pass, doms: domaines });
